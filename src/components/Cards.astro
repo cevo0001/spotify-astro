@@ -1,18 +1,72 @@
 ---
-import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
 ---
 
-<Button variant="primary" size="small">KLIK KLIK</Button>
-<Button variant="secondary" size="medium">KLUK KLUK</Button>
-<Button variant="primary" size="large">KLAK KLAK</Button>
 
-<Card header="shoes">
-  <p>Her er min "slot" tekst</p>
-  <button>køb</button>
+<img src="https://picsum.photos/id/65/150/150" alt="Billede 1" class="img1">
+<img src="https://picsum.photos/id/68/150/150" alt="Billede 2" class="img1">
+<img src="https://picsum.photos/id/76/150/150" alt="Billede 3" class="img1">
+<img src="https://picsum.photos/id/240/150/150" alt="Billede 4" class="img1">
+<img src="https://picsum.photos/id/331/150/150" alt="Billede 5" class="img1">
+<img src="https://picsum.photos/id/325/150/150" alt="Billede 6" class="img1">
+<img src="https://picsum.photos/id/334/150/150" alt="Billede 7" class="img1">
+<img src="https://picsum.photos/id/338/150/150" alt="Billede 8" class="img1">
+<img src="https://picsum.photos/id/349/150/150" alt="Billede 9" class="img1">
+<img src="https://picsum.photos/id/364/150/150" alt="Billede 10" class="img1">
+
+<div class="cards-container">
+<Card header="Kunstner">
+  <img src="https://picsum.photos/id/325/150/150" alt="Billede 6" class="imglist">
+  <p>Lyt til kunstneren her</p>
+  <button>Afspil sang</button>
 </Card>
 
-<Card header="jeans">
-  <p>Her er en tekst til min jeans</p>
-  <button>køb</button>
+<Card header="Album">
+  <img src="https://picsum.photos/id/65/150/150" alt="Billede 1" class="imglist">
+  <p>Lyt til album her</p>
+  <button>Afspil album</button>
 </Card>
+</div>
+
+<img src="https://via.assets.so/album.png?id=1&q=95&w=360&h=360&fit=fill" alt="Billede 1">
+<img src="https://via.assets.so/album.png?id=2&q=95&w=360&h=360&fit=fill" alt="Billede 2">
+<img src="https://via.assets.so/album.png?id=3&q=95&w=360&h=360&fit=fill" alt="Billede 3">
+<img src="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill" alt="Billede 4">
+<img src="https://via.assets.so/album.png?id=5&q=95&w=360&h=360&fit=fill" alt="Billede 5">
+<img src="https://via.assets.so/album.png?id=6&q=95&w=360&h=360&fit=fill" alt="Billede 6">
+<img src="https://via.assets.so/album.png?id=7&q=95&w=360&h=360&fit=fill" alt="Billede 7">
+<img src="https://via.assets.so/album.png?id=8&q=95&w=360&h=360&fit=fill" alt="Billede 8">
+<img src="https://via.assets.so/album.png?id=9&q=95&w=360&h=360&fit=fill" alt="Billede 9">
+<img src="https://via.assets.so/album.png?id=10&q=95&w=360&h=360&fit=fill" alt="Billede 10">
+
+<style>
+.imglist{
+    border-radius: 10px;
+    width: 60px;
+  padding: 0;}
+    
+  img{
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+  }
+  .img1{
+    border-radius: 90px;
+    width: 100px;
+    padding: 6px;
+  }
+
+  img:hover {
+  filter: brightness(60%); /* Gør billedet mørkere */
+  transition: 0.3s ease-in-out; /* Gør overgangen blødere */
+}
+
+button{
+font-size: 10px;
+padding: 10px;
+background-color: rgb(180, 180, 180);
+color: rgb(0, 0, 0);
+}
+  
+
+</style>
