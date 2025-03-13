@@ -1,0 +1,28 @@
+---
+const { header, beskrivelse } = Astro.props;
+---
+
+<!-- <article>
+  <h2>{header}</h2>
+  <p>{beskrivelse}</p>
+  <button>køb</button>
+</article>
+
+<style></style> -->
+<article>
+  <h2>{header}</h2>
+  <p>Fællestekst for alle cards</p>
+  <div class="carddesign">
+    <slot />
+  </div>
+</article>
+
+<style>
+  article {
+    border: 1px solid pink;
+  }
+  p,
+  .carddesign :global(p) {
+    color: rgb(198, 198, 255);
+  }
+</style>
